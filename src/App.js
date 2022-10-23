@@ -108,7 +108,7 @@ onButtonSubmit = () => {
       // if we get a response from clarafai
       if (response) {
         // fetch the image url from the server
-        fetch('http://localhost:3000/image', {
+        fetch('https://vast-everglades-17243.herokuapp.com/image', {
           // we specifiy that we want to do a PUT method (i.e. update the values)
           method: 'put',
           // we specifi that it is a JSON file
