@@ -10,7 +10,7 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
             {/* using tacyons to style this i.e. f3 and adding putting sign out as the text*/}
             {/* // when the signin button is clicked trigger the on onroutechange function and pass the 'signin' parameter, we do an arrow function so only when
             // onClick happens then you run the function instead of running the function everytime you render  */}
-            <p onClick={() => onRouteChange('signout')} className='f3 link dim black underline pa3 pointer'>Sign Out</p>
+            {/* <p onClick={() => onRouteChange('signout')} className='f3 link dim black underline pa3 pointer'>Sign Out</p> */}
         </nav>
         );
     } else {
