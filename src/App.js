@@ -24,7 +24,7 @@ const initialState = {
   //  this box will contain the values that we recieve i.e. the bounding box 
   box: {},
   //  the route state keeps track on where we are on the page (we want it to start on signin)
-  route: 'signin',
+  route: 'home',
   // tracks if the user is signed in or not. Default is false
   isSignedIn: false,
   // tracking the user object
