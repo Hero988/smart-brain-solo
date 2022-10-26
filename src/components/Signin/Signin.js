@@ -26,7 +26,7 @@ class Signin extends React.Component {
     // when the sign in form has been submitted do this
     onSubmitSignIn = () => {
         // here we fetch the local host and the sign in route
-        fetch('https:/vast-everglades-17243.herokuapp.com/signin', {
+        fetch('https://vast-everglades-17243.herokuapp.com/signin', {
             // we specifiy that we want to do a POST mether (i.e. post the values)
             method: 'post',
             // we specifi that it is a JSON file
@@ -43,11 +43,11 @@ class Signin extends React.Component {
             .then(response => response.json())
             //  check the response to see if user.id exists and call two functions if a user is returned from the backend: loadUser(user) and onRouteChange('home')
             .then(user => {
-                if(user.id){ // does the user exist? Did we receive a user with a property of id?
-                  this.props.loadUser(user);
-                  this.props.onRouteChange('home');
+                if (user.id) { // does the user exist? Did we receive a user with a property of id?
+                    this.props.loadUser(user);
+                    this.props.onRouteChange('home');
                 }
-              })
+            })
     }
 
     render() {
